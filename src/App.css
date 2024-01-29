@@ -1,38 +1,397 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Lemon&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:opsz,wght@6..12,200&family=Playfair+Display:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Lemon&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:opsz,wght@6..12,200&family=Playfair+Display:wght@400..900&family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hedvig+Letters+Serif:opsz@12..24&family=Lemon&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:opsz,wght@6..12,200&family=Playfair+Display:wght@400..900&family=Rubik+Burned&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hedvig Letters Serif", serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homepage{
+  background-color: burlywood;
+}
+.homepage-wrapper{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4%;
+  padding-bottom: 1%;
+}
+.callme{
+  display: flex;
+gap: 0.5rem;
+}
+.contactus h5,.contactus p{
+  font-size: 12px;
+}
+.navigations ul{
+  display: flex;
+  list-style: none;
+}
+.navigations ul a{
+  text-decoration: none;
+  padding: 15px;
+  color: black;
+}
+.homeimgone img{
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+margin-left: 33%;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #f4f2f2;
+  border: none;
+  color: #111111;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 41em;
+  transition: all ease-in-out .5s;
+  margin-right: -2rem;
+}
+
+.search__input:hover, .search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #575757a4;
+}
+
+.search__input:focus + .search__button {
+  background-color: #f0eeee;
+}
+
+.search__button {
+  border: none;
+  background-color: #f4f2f2;
+  margin-top: .1em;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search__icon {
+  display: none;
+  height: 1.3em;
+  width: 1.3em;
+  fill: #b4b4b4;
+}
+.displaycategories{
+  /* display: flex;
+  justify-content: center; */
+text-align: center
+;  gap: 12rem;
+margin-top: 1%;
+}
+.displaycategories .viewcate{
+margin-left: 48%;
+}
+.displaycategories a{
+color: black;
+line-height: 12px;
+}
+.displaymycateg{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  gap: 5rem;
+}
+.displaymycateg button{
+  border-radius: 20px;
+  padding: 14px;
+
+} 
+.displaymycateg a{
+text-decoration: none;
+color: black;
+padding: 30px;
+}
+.categname h2{
+  text-align: center;
+  margin-top: 2%;
+}
+.newarrival{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 3%;
+  gap: 46rem;
+}
+.newarrivalcontainer{
+margin-bottom: 4%;
+margin-top: 4%;
+}
+.cardcontainer{
+  width: 300px;
+  height: auto;
+  border-radius: 30px;
+ box-shadow: 5px 10px 13px #bebebe5f,
+               -10px -5px 30px #ffffff56;
+}
+.displaycardcontainer{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+.cardcol img{
+  width: 90%;
+  height: 400px;
+}
+.newarrivalcontainer{
+  margin-top: 7%;
+}
+.cardbody{
+  margin-left: 10%;
+}
+.displayvector img{
+  width: 80%;
+  height: 12vh;
+}
+.displayvector p{
+ font-size: 12px;
+ text-align: center;
+}
+.aluta a{
+  text-decoration: none;
+  color: black;
+}
+.aluta{
+  margin-top: 10%;
+  justify-content: center;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  width: 150px;
+  transition: 0.5s ease-in-out;
+}
+.aluta:hover{
+  background-color: black;
+color: white;
+border: 1px solid rgb(255, 255, 255);
+
+}
+.aluta a:hover{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.viewcate button{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.912);
+  border: 1px solid;
+  width: 150px;
+  transition: 0.5s ease-in-out;
+}
+.viewcate button:hover{
+background-color: black;
+color: white;
+}
+.viewcate button a{
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+
+}
+.viewcate button a:hover{
+  color: white;
+}
+.homeimgtwo{
+  position: relative;
+  width: 100%; /* Set the width of the container to 100% */
+}
+.homeimgtwo img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  /* opacity: 0.9; */
+}
+.wishyou{
+  position: absolute;
+  top: 50%; /* Position the text in the middle vertically */
+  left: 25%; /* Position the text in the middle horizontally */
+  transform: translate(-50%, -50%); /* Center the text precisely */
+  text-align: center;
+  color: white;
+}
+.wishyou h2{
+  font-size: 42px;
+}
+.wishyou span{
+  font-family: "Rubik Burned", system-ui;
+font-size: 50px;
+}
+.wishyou p{
+font-size: 30px;
+}
+.table{
+  width: 60%;
+  margin-left: 18%;
+  margin-top: 5%;
+}
+.productprice{
+  text-align: center;
+  margin-top: 10%;
+}
+.locatei{
+display: flex;
+gap: 0.8rem;
+justify-content: center;}
+.locatei i{
+  font-size: 29px;
+}
+.locatei p{
+  font-size: 19px;
+}
+.categoryimg{
+  text-align: center;
+}
+.categoryimg img{
+width: 80%;
+height: 70vh;
+}
+.locatesearch{
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+}
+.sexybackground {
+  position: relative;
+  text-align: center;
+  margin-top: 2%;
+}
+.liqstation{
+  color: burlywood;
+  opacity: 0.7;
+  font-family: "Great Vibes", cursive;
+}
+.liqstation,
+.liqstation2 {
+  position: absolute;
+  font-size: 75px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.liqstation2 {
+  z-index: 1;
+  font-size: 38px;
 }
+.locatesearch{
+  margin-top: 6%;
+}
+.mycardcontainer{
+  background-color: yellow;
+  width: 60%;
+  /* flex: 0 0 auto;
+  width: 50%; */
+}
+.bigpoppa{
+  text-align: center;
+margin-left: 10%;
+margin-top: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+  .homepage{
+    background-color: burlywood;
+    width: auto;
+  }
+  .categoryimg img{
+    width: 100%;
+    height: 70vh;
+    }
+    .mycardcontainer img{
+      width: 100%;
+    }
+    .sexybackground {
+      position: relative;
+      text-align: center;
+      margin-top: 10%;
+    }
+    .locatesearch{
+      display: flex;
+      /* justify-content: space-between; */
+      padding: 10px;
+      margin-top: 20%;
+margin-bottom: 10%;
+    }
+    .locatesearch{
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+      gap: 1rem;
+      margin-right: 10%;
+    }
+    .locatei{
+      display: flex;
+      gap: 0.8rem;
+      }
+      .liqstation,
+.liqstation2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.liqstation{
+  color: burlywood;
+  font-size: 40px;
+  opacity: 0.9;
+  font-family: "Great Vibes", cursive;
+}
+.liqstation2{
+  font-size: 25px;
+}
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #f4f2f2;
+  border: none;
+  color: #646464;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 15em;
+  transition: all ease-in-out .5s;
+  margin-right: -2rem;
+}
+
+}
+
