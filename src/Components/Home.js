@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import { useCart } from 'react-use-cart'
 function Home() {
+    const { totalItems } = useCart()
+
   return (
     <div>
 
@@ -33,8 +35,16 @@ function Home() {
                             <Link>Shop</Link>
                         </li>
                         <li>
-                            <Link><i class="fa-solid fa-cart-shopping"></i></Link>
-                        </li>
+                        <div className='mycart'>
+                            <Link to='/cart'> 
+                            <i class="fa-solid fa-cart-shopping">
+                            <h6>{totalItems}</h6> 
+                                </i>
+                            </Link> 
+                        </div>        
+                        <p className='vcart'>view cart</p>
+      
+                      </li>
                     </ul>
                  </div>
 

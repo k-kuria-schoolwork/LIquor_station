@@ -549,7 +549,6 @@ const data = {
 
 
 
-
         {
             id:45,
             title:'Jack daniels whiskey 700ml',
@@ -811,7 +810,7 @@ const data = {
 
 
         {
-            id:45,
+            id:65,
             title:'Captain Morgan Gold rum 750ml ',
             category:'rum',
             image:'https://cdnprod.mafretailproxy.com/sys-master-root/hcd/h3d/16930391523358/87665_main.jpg_480Wx480H',
@@ -823,228 +822,475 @@ const data = {
               }
         },
         {
-            id:46,
-            title:'Jack daniels Single barrel',
-            category:'whisky',
-            image:'https://hedonism.co.uk/sites/default/files/styles/product_large/public/vintner/vintner-images/HED45172.JPG?itok=UOkMwQW9',
+            id:66,
+            title:'Malibu Carribean Coconut rum 1L',
+            category:'rum',
+            image:'https://www.montyskenya.com/wp-content/uploads/2020/05/Malibu-coconut.jpg',
             price:3500.00,
-            description:'A warm amber colour with aromas of sweet vanilla this is a smooth full-bodied whiskey with flavours of orange brown sugar and spice and a long rich flavour.'
+            description:'An iconic coconut spiced Rum that is a must have in many tropical cocktails. Malibu on the rocks, makes a livley, refreshing drink on a hot summers'
             ,stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:47,
-            title:'Jameson Irish whisky 750ml',
-            category:'whisky',
-            image:'https://www.havenwines.co.ke/wp-content/uploads/2021/08/guinness-f-3.jpg',
+            id:67,
+            title:'Lambs navy rum 750ml',
+            category:'rum',
+            image:'https://storage.googleapis.com/drinksvine/products/lambs-navy-rum.webp',
             price:2980.00,
-            description:'Jameson Irish Whiskey is triple distilled to deliver twice the smoothness. But there is a little more to this precise craft, its also about getting the crispy refreshing flavour.',
+            description:'Lambs navy rum is a Canadian rum classified as Dark rum. It has 40% ABV (alcohol by volume). It is offered in 1 litre, 750 ml at our online liquor store',
             stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:48,
-            title:'Jameson Irish whisky Black Barrel 1L',
-            category:'whisky',
-            image:'https://www.heinemann.com.au/medias/527Wx527H-null?context=bWFzdGVyfGltYWdlc3w0NDczOHxpbWFnZS9qcGVnfGFEUXlMMmd6WlM4NU9ETTNPREV6TURNNU1UTTBMelV5TjFkNE5USTNTRjl1ZFd4c3wyMjM4Y2I4YTFlMjc0ODE5YmExODI4MWI1NTk0M2ZkZjdmY2NjOWU0Y2EzNDZmYTM4MTRkNjY4YjZiNmRjODU2&v=1695154637099',
-            price:3030.00,
-            description:'Jameson Irish Whiskey is triple distilled to deliver twice the smoothness. But there is a little more to this precise craft, its also about getting the crispy refreshing flavour.',
+            id:68,
+            title:'Old monk rum 750ml',
+            category:'rum',
+            image:'https://storage.googleapis.com/drinksvine/products/old-monk-rum.webp',
+            price:1530.00,
+            description:'Old monk rum is a Indian rum classified as Dark rum. It has 42% ABV (alcohol by volume). It is offered in 750 ml at our  online liquor store.',
             stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:49,
-            title:'Jameson select reserve Irish whisky 750ml',
-            category:'whisky',
-            image:'https://www.checkers.co.za/medias/10347478EA-checkers515Wx515H?context=bWFzdGVyfGltYWdlc3w5NzIxMnxpbWFnZS9wbmd8aW1hZ2VzL2gwYi9oMjIvMTAxMDY3ODg5NzA1MjYucG5nfGQ4ZjExMmM2MTU1ZWYzMjk2ZWJhYWQ5ZGM0N2E0ZWJkOGIxZjMwMzUyY2Q5M2IzOTg3NmZmOGFkMjlhM2U4NGI',
+            id:69,
+            title:'Havana 7 years 700ml rum',
+            category:'rum',
+            image:'https://soys.co.ke/PImages/LJYNH-0.jpg',
+            price:4680.00,
+            description:'Havana Club Añejo 7 Años was the first Cuban extra aged rum that showed the world that rum could be drunk neat as well as enjoyed in cocktails.',
+             stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:70,
+            title:'Havana 3 years 700ml rum',
+            category:'rum',
+            image:'https://soys.co.ke/PImages/GGMIX-0.jpeg',
+            price:1880.00,
+            description:'Havana Club Añejo 3 Años was the first Cuban extra aged rum that showed the world that rum could be drunk neat as well as enjoyed in cocktails.',
+             stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:71,
+            title:'Old Nick rum 750ml ',
+            category:'rum',
+            image:'https://ralphs.com.ph/cdn/shop/products/Old-Nick-Caribbean-Rum-Gold-1L.png?v=1625561670',
             price:3180.00,
-            description:'Jameson Irish Whiskey is triple distilled to deliver twice the smoothness. But there is a little more to this precise craft, its also about getting the crispy refreshing flavour.',
+            description:'Buy Old Nick online in Nairobi at the best Old Nick price in Kenya. We stock all types of rum plus offer free alcohol delivery in Nairobi.',
              stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:50,
-            title:'Jameson Coopers croze 500ml',
-            category:'whisky',
-            image:'https://storage.googleapis.com/drinksvine/products/jameson-coopers-croze.webp',
-            price:5280.00,
-            description:'Jameson Irish Whiskey is triple distilled to deliver twice the smoothness. But there is a little more to this precise craft, its also about getting the crispy refreshing flavour.',
+            id:72,
+            title:'Old Nick caribbean blanc rum 750ml ',
+            category:'rum',
+            image:'https://www.realdelux.lu/src/Frontend/Files/catalog/product/source/QTAwMTI1NjRfVU5JVA==.jpeg',
+            price:4120.00,
+            description:'Buy Old Nick online in Nairobi at the best Old Nick price in Kenya. We stock all types of rum plus offer free alcohol delivery in Nairobi.',
              stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:51,
-            title:'Jim Beam 750ml ',
-            category:'whisky',
-            image:'https://cdn11.bigcommerce.com/s-taixn69rog/images/stencil/1280x1280/products/26561/809737/122640__27775.1637648972.jpg?c=1',
-            price:3180.00,
-            description:'Jim Beam Original Kentucky straight bourbon is a core bourbon at many bars for good reason: It is flavorful and consistent and possesses legitimate heritage, all at a very friendly price',
-             stock: {
-                available: true, // You can use boolean values or other representations based on your needs
-                quantity: 50 // Add the available quantity if needed
-              }
-        },
-        {
-            id:52,
-            title:'Jim Beam apple flavoured 750ml ',
-            category:'whisky',
-            image:'https://i5.walmartimages.com/seo/Jim-Beam-Apple-Flavored-Whiskey-750-ml-Bottle-ABV-32-5_61bc6729-ebca-4ad3-86da-96267c5b4148.0378802c3ec99c9501ad1c96c61bb38c.jpeg',
-            price:3120.00,
-            description:'Jim Beam Original Kentucky straight bourbon is a core bourbon at many bars for good reason: It is flavorful and consistent and possesses legitimate heritage, all at a very friendly price',
-             stock: {
-                available: true, // You can use boolean values or other representations based on your needs
-                quantity: 50 // Add the available quantity if needed
-              }
-        },
-        {
-            id:53,
-            title:'Jim Beam Honey flavoured 750ml ',
-            category:'whisky',
-            image:'https://res.cloudinary.com/dyc0ieeyu/image/upload/c_fit,f_auto,h_700,w_700/v1/products/jim-beam-honey.pnghttps://res.cloudinary.com/dyc0ieeyu/image/upload/c_fit,f_auto,h_700,w_700/v1/products/jim-beam-honey.png',
+            id:73,
+            title:'Appleron Estate rare blend 12years 750ml ',
+            category:'rum',
+            image:'https://cdn.webshopapp.com/shops/7950/files/275380927/325x375x2/appleton-appleton-estate-rare-blend-12-years-gift.jpg',
             price:4180.00,
-            description:'Jim Beam Original Kentucky straight bourbon is a core bourbon at many bars for good reason: It is flavorful and consistent and possesses legitimate heritage, all at a very friendly price',
+            description:'Appleton Estate Signature Blend Jamaican Rum is a Jamaican rum classified as Aged rum. It has 40% ABV (alcohol by volume). It is offered in 750 ml at Drinks',
             stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:54,
-            title:'Singleton of Dufftown Luscious Nectar 12year old 500ml',
-            category:'whisky',
-            image:'https://www.liquorshack.co.ke/wp-content/uploads/2022/03/Singleton-Luscious-Nector-12-YR-750ml.jpg',
-            price:5080.00,
-            description:'Singleton 15Yrs 70Cl is a WHISKEY classified as Single Malt. Singleton 15Yrs 70Cl is currently in stock, It is available for delivery in all cities',
+            id:74,
+            title:'Mount Gay rum eclipse',
+            category:'rum',
+            image:'https://crownwineandspirits.com/cdn/shop/products/mount-gay-rum-rum-mount-gay-rum-eclipse-1-75l-31515681652829.jpg?v=1664302767',
+            price:4080.00,
+            description:'Mount Gay Black Barrel is a Caribbean rum classified as dark rum and belongs to the Mount Gay distillates brand. Mount Gay Black Barrel Rum contains 43% ABV',
              stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:55,
-            title:'Singleton tailfire whisky 750ml',
-            category:'whisky',
-            image:'https://storage.googleapis.com/drinksvine/products/singleton-talifire.webp',
-            price:4250.00,
-            description:'Singleton 15Yrs 70Cl is a WHISKEY classified as Single Malt. Singleton 15Yrs 70Cl is currently in stock, It is available for delivery in all cities',
+            id:75,
+            title:'The original Sailor jerry spiced rum 750ml',
+            category:'rum',
+            image:'https://m.media-amazon.com/images/I/71xQcPZ6PmL.jpg',
+            price:2250.00,
+            description:'Sailor jerry spiced rum uses all-natural spices and flavors that give our rum a rich, smooth taste characterized by top notes of vanilla and cinnamon',
              stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:56,
-            title:'Singleton of dufftown malt masters Selection whisky 750ml',
-            category:'whisky',
-            image:'https://www.ocado.com/productImages/465/465163011_0_640x640.jpg?identifier=ffc3605940f6b879a36273e3ea23bc60',
-            price:4160.00,
-            description:'Singleton 15Yrs 70Cl is a WHISKEY classified as Single Malt. Singleton 15Yrs 70Cl is currently in stock, It is available for delivery in all cities',
+            id:76,
+            title:'Botafogo Spiced gold caribbean islands 750ml',
+            category:'rum',
+            image:'https://www.delicando.com/imagecache/item-fullscreen/df53f5924b79f02ba41e30261469e09395330e872e79e35092d2bf6950d7aa26.jpg',
+            price:2160.00,
+            description:'An aromatic explosion of flavors. Distilled in columns from sugar cane molasses, it is aged for a minimum of 3 years in ex-bourbon barrels.  It has 40% ABV (alcohol by volume). It is offered in 750 ml at our online store.',
             stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:57,
-            title:'Singleton Glen OLd 12years whisky 750ml',
-            category:'whisky',
-            image:'https://mrchowliquorstore.com/media/catalog/product/cache/19ab75be4fe9d27537185dcc12fdee38/s/i/singleton_glen_ord_12_years.jpg',
-            price:4250.00,
-            description:'Singleton 15Yrs 70Cl is a WHISKEY classified as Single Malt. Singleton 15Yrs 70Cl is currently in stock, It is available for delivery in all cities',
+            id:77,
+            title:'Botafogo white rum 750ml',
+            category:'rum',
+            image:'https://ik.imagekit.io/cprvr2lhot/Tul-botafogo%20white%20rum.jpg',
+            price:2250.00,
+            description:'An aromatic explosion of flavors. Distilled in columns from sugar cane molasses, it is aged for a minimum of 3 years in ex-bourbon barrels.  It has 40% ABV (alcohol by volume). It is offered in 750 ml at our online store.',
             stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:58,
-            title:'Glen Grant The Majors Reserve 700ml',
-            category:'whisky',
-            image:'https://www.vintageliquorkenya.com/wp-content/uploads/2021/12/Glen-Grant-700ml.jpg',
-            price:2200.00,
-            description:'Glen grant is a Scotch whisky classified as Blended scotch whisky or Single malt whisky. It has 40% ABV (alcohol by volume). It is offered in 750 ml at Drinks ',
+            id:78,
+            title:'Veuve Clicquot brut 750ml',
+            category:'champagne',
+            image:'https://www.montyskenya.com/wp-content/uploads/2021/09/Veuve-Clicquot-Brut.jpg',
+            price:12200.00,
+            description:'Veuve clicquot is a French liquor classified as brut champagne. It has 12% ABV (alcohol by volume). It is offered in 750 ml, 1.5 litre, 6 ltrs at our online store',
              stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:59,
-            title:'Glen Grant 10years Old ',
-            category:'whisky',
-            image:'https://delhidutyfree.co.in/media/catalog/product/cache/d58eb6b6cd0b875591a577c8f7a3618e/2/0/2002696.jpg',
+            id:79,
+            title:'Veuve Clicquot brut 750ml',
+            category:'champagne',
+            image:'https://storage.googleapis.com/drinksvine/products/veuve-cliquot.webp',
+            price:10280.00,
+            description:'Veuve clicquot is a French liquor classified as brut champagne. It has 12% ABV (alcohol by volume). It is offered in 750 ml, 1.5 litre, 6 ltrs at our online store',
+             stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:80,
+            title:'Veuve Clicquot Rich brut 750ml',
+            category:'champagne',
+            image:'https://sevenliquor.co.ke/wp-content/uploads/2021/10/veuve-rich.jpg',
+            price:13280.00,
+            description:'Veuve clicquot is a French liquor classified as brut champagne. It has 12% ABV (alcohol by volume). It is offered in 750 ml, 1.5 litre, 6 ltrs at our online store',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:81,
+            title:'Veuve Clicquot Rose 750ml',
+            category:'champagne',
+            image:'https://boozebazaar.co.ke/wp-content/uploads/2022/12/VEUVE-CLICQUOT-ROSE.jpg',
+            price:12200.00,
+            description:'Veuve clicquot is a French liquor classified as brut champagne. It has 12% ABV (alcohol by volume). It is offered in 750 ml, 1.5 litre, 6 ltrs at our online store',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:82,
+            title:'Moet & Chandon Imperial Rose 750ml',
+            category:'champagne',
+            image:'https://soys.co.ke/PImages/WIBUM-0.jpg',
+            price:13200.00,
+            description:'Moet & chandon imperial brut is a French liquor classified as brut champagne. It has 12% ABV (alcohol by volume). It is offered in 750 ml, 1.5 litre at our online store. Created in 1869, it embodies Moët & Chandons unique style, a style distinguished by its bright fruitiness',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:83,
+            title:'Moet &  chandon imperial brut',
+            category:'champagne',
+            image:'https://storage.googleapis.com/drinksvine/products/moet-&-chandon-imperial-brut.webp',
+            price:7200.00,
+            description:'Moet & chandon imperial brut is a French liquor classified as brut champagne. It has 12% ABV (alcohol by volume). It is offered in 750 ml, 1.5 litre at our online store. Created in 1869, it embodies Moët & Chandons unique style, a style distinguished by its bright fruitiness',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:84,
+            title:'Moet &  chandon imperial brut Milestone ',
+            category:'champagne',
+            image:'https://bkwinedepot.com/cdn/shop/products/1_1092ab70-c5aa-44d6-bf1e-8b8e2f9cb0a2.jpg?v=1650654394',
+            price:8200.00,
+            description:'Moet & chandon imperial brut is a French liquor classified as brut champagne. It has 12% ABV (alcohol by volume). It is offered in 750 ml, 1.5 litre at our online store. Created in 1869, it embodies Moët & Chandons unique style, a style distinguished by its bright fruitiness',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+
+
+
+
+
+
+
+
+
+        {
+            id:85,
+            title:'Belaire rose wine 750ml',
+            category:'champagne',
+            image:'https://storage.googleapis.com/drinksvine/products/luc-belaire-rose.webp',
+            price:9200.00,
+            description:'Belaire is a sparkling wine brand that belongs to the broader category of sparkling wines. It is among the newest and most popular Champagne style French',
+             stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:86,
+            title:'Luc Belaire luxe 750ml',
+            category:'champagne',
+            image:'https://toppng.com//public/uploads/preview/luc-belaire-luc-belaire-rare-brut-sparkling-wine-11563046128apg8y2f0zg.png',
+            price:7280.00,
+            description:'Belaire is a sparkling wine brand that belongs to the broader category of sparkling wines. It is among the newest and most popular Champagne style French',
+             stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:87,
+            title:'Belaire champagne 750ml',
+            category:'champagne',
+            image:'https://ik.imagekit.io/cprvr2lhot/mXF-belaire%20luxe%20rose%20.jpg',
+            price:6280.00,
+            description:'Belaire is a sparkling wine brand that belongs to the broader category of sparkling wines. It is among the newest and most popular Champagne style French',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:88,
+            title:'Veuve Clicquot Rose 750ml',
+            category:'champagne',
+            image:'https://galiena.sg/cdn/shop/products/c1FaLWsuT1S86GODcK3m_champagne_billecart_salmon_brut_rose_2048x.jpg?v=1651221702',
+            price:12200.00,
+            description:'Veuve clicquot is a French liquor classified as brut champagne. It has 12% ABV (alcohol by volume). It is offered in 750 ml, 1.5 litre, 6 ltrs at our online store',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:89,
+            title:'Moet & Chandon Imperial Rose 750ml',
+            category:'champagne',
+            image:'https://soys.co.ke/PImages/WIBUM-0.jpg',
+            price:13200.00,
+            description:'Moet & chandon imperial brut is a French liquor classified as brut champagne. It has 12% ABV (alcohol by volume). It is offered in 750 ml, 1.5 litre at our online store. Created in 1869, it embodies Moët & Chandons unique style, a style distinguished by its bright fruitiness',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+
+
+        {
+            id:90,
+            title:'BilleCart Salmon Brut Rose',
+            category:'champagne',
+            image:'https://galiena.sg/cdn/shop/products/c1FaLWsuT1S86GODcK3m_champagne_billecart_salmon_brut_rose_2048x.jpg?v=1651221702',
+            price:12200.00,
+            description:'Billecart Salmon Brut Reserve is a French liquor classified as brut champagne. It has 12% ABV (alcohol by volume). It is offered in 750 ml at out online store',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:91,
+            title:'BilleCart Salmon Brut Reverse',
+            category:'champagne',
+            image:'https://kentstreetcellars.com.au/cdn/shop/products/Billecart-SalmonBrutReserve3L_2048x.png?v=1620293602',
+            price:12200.00,
+            description:'Billecart Salmon Brut Reserve is a French liquor classified as brut champagne. It has 12% ABV (alcohol by volume). It is offered in 750 ml at out online store',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+
+        {
+            id:92,
+            title:'Lanson Noble Brute 2004 750ml',
+            category:'champagne',
+            image:'https://hedonism.co.uk/sites/default/files/styles/product_large/public/vintner/vintner-images/HED90008.JPG?itok=Dfr5nVlI',
+            price:7200.00,
+            description:'Lanson noble cuvee is a French liquor classified as brut champagne. It has 12% ABV (alcohol by volume). It is offered in 750 ml at  our online liquor store',
+             stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:93,
+            title:'Lanson Noble Cuvee Blanc de Blancs 2004 750ml',
+            category:'champagne',
+            image:'https://cdn11.bigcommerce.com/s-seah8s/images/stencil/1500x1500/products/290/5862/Lanson_Noble_Cuvee_Blanc_de_Blancs_2004__56712.1663237073.png?c=2',
+            price:5280.00,
+            description:'Lanson noble cuvee is a French liquor classified as brut champagne. It has 12% ABV (alcohol by volume). It is offered in 750 ml at  our online liquor store',
+             stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+
+
+
+
+
+
+        {
+            id:94,
+            title:'Absolut Imported Vodka 750ml',
+            category:'vodka',
+            image:'https://cdnprod.mafretailproxy.com/sys-master-root/h7a/hf4/16873063251998/36829_main.jpg_480Wx480H',
             price:2280.00,
-            description:'Glen grant is a Scotch whisky classified as Blended scotch whisky or Single malt whisky. It has 40% ABV (alcohol by volume). It is offered in 750 ml at Drinks ',
-             stock: {
-                available: true, // You can use boolean values or other representations based on your needs
-                quantity: 50 // Add the available quantity if needed
-              }
-        },
-        {
-            id:60,
-            title:'Glen Grant Single Malt 18years scotch whisky',
-            category:'whisky',
-            image:'https://plumpjackwines.com/cdn/shop/products/GlenGrant18.jpg?v=1639531874',
-            price:3280.00,
-            description:'Glen grant is a Scotch whisky classified as Blended scotch whisky or Single malt whisky. It has 40% ABV (alcohol by volume). It is offered in 750 ml at Drinks ',
+            description:'Vodka is a type of distilled beverage with water and ethanol as the main components.Order for Vodka deliveries in Nairobi from our collection here.',
             stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:61,
-            title:'Glen Grant Arboralis speyside single malt whisky 0,7l',
-            category:'whisky',
-            image:'https://cdn02.plentymarkets.com/la0rqaqio8pl/item/images/5347/full/GlenTrantArboralis-Kuhns.jpg',
-            price:4200.00,
-            description:'Glen grant is a Scotch whisky classified as Blended scotch whisky or Single malt whisky. It has 40% ABV (alcohol by volume). It is offered in 750 ml at Drinks ',
+            id:95,
+            title:'Smirnoff No.21 vodka 750ml',
+            category:'vodka',
+            image:'https://s3.ap-southeast-1.amazonaws.com/saleor.lizard/products/smirnoff-no21_9c233321-min_20245962.png',
+            price:12200.00,
+            description:'Vodka is a type of distilled beverage with water and ethanol as the main components.Order for Vodka deliveries in Nairobi from our collection here.',
             stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:62,
-            title:'Johnnie walker Black Label 1.75L',
-            category:'whisky',
-            image:'https://www.bswliquor.com/cdn/shop/products/johnnie_walker_1750ml.png?v=1632758579',
-            price:2200.00,
-            description:'Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It was established in the Scottish burgh of Kilmarnock, East Ayrshire in 1820, and continued to be produced and bo',
+            id:96,
+            title:'Ciroc Vodka 750ml',
+            category:'vodka',
+            image:'https://molloys.ie/cdn/shop/products/ciroc_vodka_large_5dfa0bce-9bcd-4790-b446-e42de05c9602_470x.png?v=1599666524',
+            price:1200.00,
+            description:'Vodka is a type of distilled beverage with water and ethanol as the main components.Order for Vodka deliveries in Nairobi from our collection here.',
             stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:63,
-            title:'Johnnie walker Red Label 700ml  ',
-            category:'whisky',
-            image:'https://www.kavakonstantakopoulos.gr/images/thumbs/0000240.jpg',
-            price:2200.00,
-            description:'Johnnie Walker is a brand of Scotch whisky produced by Diageo in Scotland. It was established in the Scottish burgh of Kilmarnock, East Ayrshire in 1820, and continued to be produced and bo',
+            id:97,
+            title:'Smirnoff Orange Vodka 750ml',
+            category:'vodka',
+            image:'https://cdn.shopify.com/s/files/1/0568/3557/1785/products/smirnoff-vodka-smirnoff-lime-vodka-750ml-31515706458205.jpg?v=1686087247&width=900',
+            price:1200.00,
+            description:'Vodka is a type of distilled beverage with water and ethanol as the main components.Order for Vodka deliveries in Nairobi from our collection here.',
             stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
               }
         },
         {
-            id:64,
-            title:'Macallan Amber 1842 series 750ml',
-            category:'whisky',
-            image:'https://www.thewhiskyworld.com/images/macallan-amber-1824-series-5cl-miniature-p2818-15739_image.jpg',
+            id:98,
+            title:'Smirnoff vodka strawberry 750ml ',
+            category:'vodka',
+            image:'https://www.gordonswine.com/wp-content/uploads/product_images/product-15755-1677477732-24476.jpg',
+            price:1200.00,
+            description:'Vodka is a type of distilled beverage with water and ethanol as the main components.Order for Vodka deliveries in Nairobi from our collection here.',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+
+        {
+            id:99,
+            title:'Ciroc apple 750ml',
+            category:'vodka',
+            image:'https://products0.imgix.drizly.com/ci-ciroc-apple-vodka-8e6b24873e459b43.jpeg?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20',
+            price:4280.00,
+            description:'Vodka is a type of distilled beverage with water and ethanol as the main components.Order for Vodka deliveries in Nairobi from our collection here.',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:100,
+            title:'Beluga Nobel vodka 1Ltr',
+            category:'vodka',
+            image:'https://soys.co.ke/PImages/CDHJG-0.jpg',
+            price:6200.00,
+            description:'Vodka is a type of distilled beverage with water and ethanol as the main components.Order for Vodka deliveries in Nairobi from our collection here.',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:101,
+            title:'Grey Goose Vodka original 750ml',
+            category:'vodka',
+            image:'https://soys.co.ke/PImages/HVYQH-0.jpg',
             price:5200.00,
-            description:'Macallan Amber has a warmth of amber colour with notes of vanilla and citrus fruits. It has an amber color as its name. This whisky is a polite, ',
+            description:'Vodka is a type of distilled beverage with water and ethanol as the main components.Order for Vodka deliveries in Nairobi from our collection here.',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:102,
+            title:'Grey Goose Vodka L Orange 750ml',
+            category:'vodka',
+            image:'https://minuman.com/cdn/shop/products/GREY-GOOSE-ORANGE_1024x.jpg?v=1626409448',
+            price:5200.00,
+            description:'Vodka is a type of distilled beverage with water and ethanol as the main components.Order for Vodka deliveries in Nairobi from our collection here.',
+            stock: {
+                available: true, // You can use boolean values or other representations based on your needs
+                quantity: 50 // Add the available quantity if needed
+              }
+        },
+        {
+            id:103,
+            title:'Flirt Vodka orange 750ml ',
+            category:'vodka',
+            image:'https://storage.googleapis.com/drinksvine/products/flirt-vodka-orange.webp',
+            price:2200.00,
+            description:'Vodka is a type of distilled beverage with water and ethanol as the main components.Order for Vodka deliveries in Nairobi from our collection here.',
             stock: {
                 available: true, // You can use boolean values or other representations based on your needs
                 quantity: 50 // Add the available quantity if needed
@@ -1052,3 +1298,5 @@ const data = {
         },
     ]
 }
+
+export default data
