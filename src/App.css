@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Hedvig Letters Serif", serif;
-
+letter-spacing: .13em;
 }
 .homepage{
   background-color: burlywood;
@@ -29,11 +29,12 @@ gap: 0.5rem;
 .navigations ul{
   display: flex;
   list-style: none;
+
 }
 .navigations ul a{
   text-decoration: none;
   /* padding: 15px; */
-  margin-right: 10px;
+  margin-right: 65px;
   color: black;
 }
 .homeimgone img{
@@ -346,6 +347,7 @@ margin-top: 3%;
 .backcategory i{
   font-size: 35px;
 }
+
 .searchyy {
   display: flex;
   align-items: center;
@@ -408,6 +410,20 @@ margin-top: 3%;
   align-items: center;
   padding: 30px;
 }
+.productcategory{
+  text-align: center;
+}
+.productcategory button{
+  background-color: wheat;
+  margin-right: 12px;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+.productcategory button a{
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
 .mycart i{
   font-size: 30px;
   color: black;
@@ -444,12 +460,12 @@ margin-top: 3%;
   
   .liqstation4 {
     z-index: 1;
-    font-size: 35px;
+    font-size: 27px;
   }
   .sexybackgroundyy {
     position: relative;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 5%;
   }
   .singlecontainer-wrapper{
     margin-top: 8%;
@@ -462,17 +478,28 @@ margin-top: 3%;
   .singlestory p{
     font-size: 14px;
     letter-spacing: 1px;
-
+  }
+  .available{
+    color:rgb(26, 222, 26);
   }
   .singlecontainer-wrapper img {
     height: 500px;
   }
   .relatedprodcontiner{
     display: flex;
-    gap: 3rem;
+    /* gap: 3rem; */
 margin-top: 5%; 
-
+justify-content: center;
  }
+ .relatedprodcontiner {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.relatedprod-wrapper {
+  width: 50%;
+  box-sizing: border-box; /* Optional: include padding and border in the width */
+}
 .relatedprod-wrapper img{
   height: 300px;
 }
@@ -527,7 +554,7 @@ background-color: greenyellow;
 }
 .cartenimage{
   height: 100px;
-  width: 100%;
+  width: 200%;
 }
 .cartnip{
   padding: 25px;
@@ -536,11 +563,13 @@ background-color: greenyellow;
   gap: 4rem;
 }
 .cartwrappper{
+  width: 70%;
 border: 1px solid black;
 border-radius: 15px;
 }
 .backcategory3 i{
-  font-size: 50px;
+  font-size: 35px;
+  color: black;
 }
 .backcategory3{
   display: flex;
@@ -551,7 +580,11 @@ margin-top: 3%;
 }
 .yoshipment{
   display: flex;
-  gap: 15rem;
+  gap: 8rem;
+  font-size: 13px;
+}
+.yoshipment h5{
+  font-size: 15px;
 }
 .findmewrapper button a{
   text-decoration: none;
@@ -581,8 +614,14 @@ margin-top: 3%;
 .paymentmethod{
   display: block;
 }
+.orderwrapper{
+  display: flex;
+  justify-content: center;
+gap: 1rem;
+}
 .joerogan{
   display: flex;
+  margin-bottom: 10%;
   margin-top: 5%;
   justify-content: center;
   gap: 2rem;
@@ -594,18 +633,89 @@ border-radius: 15px;
 padding: 10px 20px 25px;
 }
 .ordersummary{
-  width: 20%;
+  width: 70%;
   border: 1px solid black;
 border-radius: 15px;
 padding: 10px 20px 30px;
 }
-.checkout a button{
-  width: 100%;
+.checkout1 a button{
+  /* width: 140%; */
   color: rgb(255, 255, 255);
   background-color: black;
   border: none;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   padding: 8px;
+  transition: 0.5s;
+}
+.checkout2 a button{
+  /* width: 140%; */
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  /* border-radius: 20px; */
+  padding: 8px;
+  transition: 0.5s;
+}
+.checkout1 a button:hover,
+.checkout2 a button:hover{
+  transform: translateY(-8%);
+}
+.proceed{
+  text-align: center;
+  margin-top: 5%;
+}
+.emptycart{
+  display: flex;
+  justify-content: center;
+  padding-top: 18%;
+  font-size: 55px;
+}
+
+.cartbtn4 {
+  margin-left: 48%;
+
+  --hover-shadows: 16px 16px 33px #121212,
+                    -16px -16px 33px #303030;
+  --accent: rgb(235, 219, 158);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 1.1em;
+  background-color: #212121;
+  color: white;
+  padding: 1em 2em;
+  transition: box-shadow ease-in-out 0.3s,
+              background-color ease-in-out 0.1s,
+              letter-spacing ease-in-out 0.1s,
+              transform ease-in-out 0.1s;
+  box-shadow: 13px 13px 10px #1c1c1c82,
+              -13px -13px 10px #26262690;
+ }
+ 
+ .cartbtn4:hover {
+  box-shadow: var(--hover-shadows);
+ }
+ 
+ .cartbtn4:active {
+  box-shadow: var(--hover-shadows),
+               var(--accent) 0px 0px 30px 5px;
+  background-color: var(--accent);
+  transform: scale(0.95);
+ }
+
+.checkout{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 25px;
+}
+.confirmcancel{
+  margin-bottom: 30%;
+  margin-top: 10%;
+display: flex; 
+/* margin: 50px; */
+justify-content: center;
+gap: 5rem;
 }
 .subtotal{
   margin-top: 10%;
@@ -641,7 +751,7 @@ tr:nth-child(even) {
   border: none;
   padding: 1rem;
   border-radius: 20px;
-  background: #e8e8e8;
+  background: #ffffff;
   box-shadow: 5px 5px 6px #c5c5c5,
      -2px -2px 6px #ffffff;
   transition: 0.3s;
@@ -654,6 +764,136 @@ tr:nth-child(even) {
      inset -20px -20px 60px #ffffff;
   transition: 0.3s;
  }
+ .checkoutcontainer{
+  display: flex;
+justify-content: center; }
+ .form1{
+  width: 100%;
+  margin-right: -10%;
+  margin-top: 2%;
+ }
+ #pheader{
+  font-size: 12px;
+  width: 100%;
+ }
+ .jamaica{
+  margin-left: 20%;
+  margin-top: 8%;
+ }
+ .pppheader{
+  width: 70%;
+ }
+ .cartbody2{
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+ }
+ .titlle{
+  text-align: center;
+  margin-left: 10%;
+ }
+ .price2{
+  margin-left: 10%;
+  color: brown;
+ }
+ .online{
+  color: grey;
+ }
+ .card{
+  width: 80%;
+  display: flex;
+ }
+ .row-cols-md-3>*{
+  width: 25.33333%;
+  margin-left: 5%;
+  margin-top: 5%;
+ }
+ .bigmanhuncho{
+  display: flex;
+ }
+ .mkonamchezo{
+  text-align:center;
+  margin-left: 5%;
+/* border: 2px solid yellowgreen; */
+}
+.mkonamchezo h3{
+  margin-top: 6%;
+}
+.checkoutheader a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  transition: 0.3s ease-in-out;
+}
+.checkoutheader a i{
+  font-size: 20px;
+}
+.checkoutheader a:hover{
+color: brown;
+}
+.checkdesc{
+  margin-left: 10%;
+}
+.checkdesc h3{
+  font-size: 50px;
+}
+.confirm{
+background-color: black;
+color: white;
+border: none;
+padding: 10px 50px 10px 30px;
+}
+.confirm:hover,
+.cancel:hover{
+  transform: translateY(-8%);
+
+}
+.cancel{
+  background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+border: 1px solid black;
+padding: 10px 50px 10px 30px;
+}
+.navlinkcart{
+  display: flex;
+}
+.mobilenavbar{
+  display: none;
+}
+.nav{
+  position: fixed;
+  bottom: 0;
+  width: 90%;
+  height: 65px;
+  box-shadow: 0 0 5px gray;
+  border-radius: 50px;
+  background-color: rgba(255, 221, 157, 0.872);
+  overflow-x: auto;
+  display: flex;
+  margin: 20px;
+}
+.navlinks{
+  padding: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+flex-grow: 1;
+min-width: 50px;
+overflow: hidden;
+white-space: nowrap;
+font-size: 25px;
+color: black;
+text-decoration: none;
+transition: background-color 0.1s ease-in-out;
+}
+.navlinks p{
+  font-size: 13px;
+}
 
 
 
@@ -678,7 +918,153 @@ tr:nth-child(even) {
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+  .emptycart{
+    display: flex;
+    justify-content: center;
+    padding-top: 18%;
+    font-size: 25px;
+  }
+  
+  .cartbtn4 {
+    margin-left: 28%;
+    font-size: 15px;
+   }
+   
+
+  .checkout1 a button{
+     width: 185%; 
+  }
+  .logoheader h2{
+    font-size: 18px;
+  }
+  .callme i{
+    font-size: 12px;
+  }
+  .contactus h5{
+    font-size: 10px;
+  }
+  .contactus p{
+    font-size: 8px;
+  }
+  .cartnip{
+    padding: 25px;
+    display: block;
+    align-items: center;
+    gap: 4rem;
+  }
+  .pppheader{
+    width: 70%;
+    font-size: 12px;
+   }
+  .cartwrappper{
+    width: 90%;
+  border: 1px solid black;
+  border-radius: 15px;
+  }
+  .checkoutcontainer{
+    margin-bottom: 20%;
+  }
+  .input1 {
+    width: 45%;
+    margin: 10px;
+    border: none;
+    padding: 1rem;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 5px 5px 6px #c5c5c5,
+       -2px -2px 6px #ffffff;
+    transition: 0.3s;
+   }
+  .bigmanhuncho{
+    display: block;
+   }
+  .mobilenavbar{
+    display:contents;
+  }
+  .cardcol img{
+    width: 100%;
+    height: 170px;
+  }
+  .cardcontainer{
+    width: 200px;
+    height: auto;
+    border-radius: 30px;
+   box-shadow: 5px 10px 13px #bebebe5f,
+                 -10px -5px 30px #ffffff56;
+  }
+  .cartenimage{
+    height:180px;
+    width: 80%;
+  }
+  .mydustbin{
+    text-align: end;
+    margin-top: -10%;
+  }
+  .backcategory3{
+    display: flex;
+    align-items: center;
+  gap: 12rem;
+  margin-left: 10%;
+  margin-top: 10%;
+  }
+  .joerogan{
+    padding: 18px;
+    margin-bottom: 50%;
+  }
+  
+  .navigations{
+    display: none;
+  }
+  .relattitle{
+font-size: 20px;
+  }
+  .relatedprodcontiner{
+    display: flex;
+    gap: 0rem;
+margin-top: 5%; 
+justify-content: center;
+ }
+ .relatedprodcontiner {
+  display: flex;
+  flex-wrap: wrap;
+}
+  .relatedprod-wrapper img{
+    height: 130px;
+  }
+  .relatedbody{
+    font-size: 10px;
+    width: 80%;
+  }
+  .singlestory h2{
+    font-size: 23px;
+  }
+  .singlestory p{
+    font-size: 12px;
+    width: 89%;
+  }
+ 
+  .row-cols-md-3>*{
+    width: 95.33333%;
+    margin-left: 5%;
+    margin-top: 5%;
+   }
+  .singlestory{
+    width: 100%;
+    padding: 20px;
+  }
+  .addcart{
+    text-align: center;
+  }
+  .singlecontainer-wrapper img{
+    height: 450px;
+    text-align: center;
+  }
+  .singlecontainer-wrapper{
+    margin-top: 8%;
+    display: block;
+    justify-content: center;
+  }
   .liqstation3{
     color: burlywood;
     opacity: 0.7;
@@ -719,6 +1105,9 @@ tr:nth-child(even) {
     gap: 4rem;
     align-items: center;
   }
+  #jambo {
+    margin-top: -120%;
+  }
   .mycart i{
     font-size: 22px;
     margin-top: 5%;
@@ -727,7 +1116,7 @@ tr:nth-child(even) {
     font-size: 8px;
   }
   .productspageheader{
-    display: block;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 30px;
@@ -743,10 +1132,15 @@ tr:nth-child(even) {
     .mycardcontainer img{
       width: 100%;
     }
+    .sexybackgroundyy{
+      margin-top: 15%;
+
+    }
     .sexybackground {
       position: relative;
       text-align: center;
       margin-top: 10%;
+      margin-bottom: 10%;
     }
     .locatesearch{
       display: flex;

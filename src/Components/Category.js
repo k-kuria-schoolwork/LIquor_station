@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import data from '../data'
+// import data from '../data'
 
 function Category() {
 
     const [filter, setFilter] = useState('')
-    const [selectedCategory, setSelectedCategory] = useState('all')
+    const [selectedCategoryCard, setSelectedCategoryCard] = useState('all')
 
 
     const searchText = (e)=> {
@@ -13,7 +13,7 @@ function Category() {
     }
 
     const handleCategoryClick = (category) => {
-        setSelectedCategory(category)
+        setSelectedCategoryCard(category)
         setFilter('')//Clear the filter when a new category is selected
     }
 
@@ -29,15 +29,15 @@ function Category() {
 
 
     //FILTER ITEMS BASED ON CATEGORY AND SEARCH
-    const filteredItems = data.cardData.filter((item) => {
-        const categoryFilter = selectedCategory === 'all' || item.category === selectedCategory;
-        const searchFilter =
-          filter === '' || // Check if the filter is empty, don't filter if it is
-          Object.keys(item).some((key) =>
-            item[key].toString().toLowerCase().includes(filter.toLowerCase())
-          );
-        return categoryFilter && searchFilter;
-      });
+    // const filteredItems = data.cardData.filter((item) => {
+    //     const categoryFilter = selectedCategory === 'all' || item.category === selectedCategory;
+    //     const searchFilter =
+    //       filter === '' || // Check if the filter is empty, don't filter if it is
+    //       Object.keys(item).some((key) =>
+    //         item[key].toString().toLowerCase().includes(filter.toLowerCase())
+    //       );
+    //     return categoryFilter && searchFilter;
+    //   });
 
 
 
@@ -88,10 +88,12 @@ function Category() {
         <div className='col-md-6 col-sm-12'>
         <div className='mycardcontainer'>
                     <div className='mycardcontainer-wrapper'>
+                      <Link to='/products/whisky'>
                         <img src='https://media.istockphoto.com/id/1172594405/vector/whiskey-bottles-and-glass-vector-sketch-illustration-scotch-brandy-or-liquor-alcohol-drinks.jpg?s=612x612&w=0&k=20&c=rCdQ8SUQfCA4Fe_e_zn-0FWht1QLhXojiHnuVINPkMw=' alt='italcatgeories'></img>
                         <div className='categoriesstory'>
                         <h3>Whiskey</h3>
-                        </div>    
+                        </div>
+                        </Link>    
                         </div>
                 </div>
         </div>
@@ -101,35 +103,41 @@ function Category() {
         <div className='col-md-6 col-sm-12'>
         <div className='mycardcontainer'>
                     <div className='mycardcontainer-wrapper'>
+                      <Link to='/products/gin'>
                         <img src='https://media.istockphoto.com/id/1172594405/vector/whiskey-bottles-and-glass-vector-sketch-illustration-scotch-brandy-or-liquor-alcohol-drinks.jpg?s=612x612&w=0&k=20&c=rCdQ8SUQfCA4Fe_e_zn-0FWht1QLhXojiHnuVINPkMw=' alt='italcatgeories'></img>
                         <div className='categoriesstory'>
-                        <h3>Whiskey</h3>
-                        </div>    
-                        </div>
+                        <h3>Gin</h3>
+                        </div> 
+                        </Link>   
+                      </div>
                 </div>
         </div>
 
 
         <div className='col-md-6 col-sm-12'>
         <div className='mycardcontainer'>
-                    <div className='mycardcontainer-wrapper'>
+        <div className='mycardcontainer-wrapper'>
+                      <Link to='/products/vodka'>
                         <img src='https://media.istockphoto.com/id/1172594405/vector/whiskey-bottles-and-glass-vector-sketch-illustration-scotch-brandy-or-liquor-alcohol-drinks.jpg?s=612x612&w=0&k=20&c=rCdQ8SUQfCA4Fe_e_zn-0FWht1QLhXojiHnuVINPkMw=' alt='italcatgeories'></img>
                         <div className='categoriesstory'>
-                        <h3>Whiskey</h3>
-                        </div>    
-                        </div>
+                        <h3>Vodka</h3>
+                        </div> 
+                        </Link>   
+                      </div>
                 </div>
         </div>
 
 
         <div className='col-md-6 col-sm-12'>
         <div className='mycardcontainer'>
-                    <div className='mycardcontainer-wrapper'>
+        <div className='mycardcontainer-wrapper'>
+                      <Link to='/products/rum'>
                         <img src='https://media.istockphoto.com/id/1172594405/vector/whiskey-bottles-and-glass-vector-sketch-illustration-scotch-brandy-or-liquor-alcohol-drinks.jpg?s=612x612&w=0&k=20&c=rCdQ8SUQfCA4Fe_e_zn-0FWht1QLhXojiHnuVINPkMw=' alt='italcatgeories'></img>
                         <div className='categoriesstory'>
-                        <h3>Whiskey</h3>
-                        </div>    
-                        </div>
+                        <h3>Rum</h3>
+                        </div> 
+                        </Link>   
+                      </div>
                 </div>
         </div>
 
@@ -137,24 +145,28 @@ function Category() {
 
                <div className='col-md-6 col-sm-12'>
         <div className='mycardcontainer'>
-                    <div className='mycardcontainer-wrapper'>
-                        <img src='https://media.istockphoto.com/id/1172594405/vector/whiskey-bottles-and-glass-vector-sketch-illustration-scotch-brandy-or-liquor-alcohol-drinks.jpg?s=612x612&w=0&k=20&c=rCdQ8SUQfCA4Fe_e_zn-0FWht1QLhXojiHnuVINPkMw=' alt='italcatgeories'></img>
+        <div className='mycardcontainer-wrapper'>
+                      <Link to='/products/champagne'>
+                        <img src='https://cdn.vectorstock.com/i/preview-1x/88/17/realistic-champagne-explosion-vector-19628817.jpg' alt='italcatgeories'></img>
                         <div className='categoriesstory'>
-                        <h3>Whiskey</h3>
-                        </div>    
-                        </div>
+                        <h3>Champagne</h3>
+                        </div> 
+                        </Link>   
+                      </div>
                 </div>
         </div>
 
 
         <div className='col-md-6 col-sm-12'>
         <div className='mycardcontainer'>
-                    <div className='mycardcontainer-wrapper'>
+        <div className='mycardcontainer-wrapper'>
+                      <Link to='/products/wine'>
                         <img src='https://media.istockphoto.com/id/1172594405/vector/whiskey-bottles-and-glass-vector-sketch-illustration-scotch-brandy-or-liquor-alcohol-drinks.jpg?s=612x612&w=0&k=20&c=rCdQ8SUQfCA4Fe_e_zn-0FWht1QLhXojiHnuVINPkMw=' alt='italcatgeories'></img>
                         <div className='categoriesstory'>
-                        <h3>Whiskey</h3>
-                        </div>    
-                        </div>
+                        <h3>Wine</h3>
+                        </div> 
+                        </Link>   
+                      </div>
                 </div>
         </div>
 
@@ -166,7 +178,7 @@ function Category() {
       {categoryButtons.map((category) => (
         <button
           key={category.value}
-          className={`cartbtn ${selectedCategory === category.value ? 'active' : ''}`}
+          className={`cartbtn ${selectedCategoryCard === category.value ? 'active' : ''}`}
           onClick={() => handleCategoryClick(category.value)}
         >
           <Link to={`/products/${category.value}`}>{category.label}</Link>
@@ -175,64 +187,9 @@ function Category() {
 
 
 
-      {/* <div className='category'> */}
-                <div className='catwrapper'>
-                <button className={`cartbtn ${selectedCategory === 'all' ? 'active' : ''}`} onClick={() => handleCategoryClick('all')} >
-                All
-                </button>
-                <button className={`cartbtn ${selectedCategory === 'vodka' ? 'active' : ''}`} onClick={() => handleCategoryClick('vodka')}>
-                vodka
-                </button>
-                <button className={`cartbtn ${selectedCategory === 'rum' ? 'active' : ''}`} onClick={() => handleCategoryClick('rum')}>
-                rum
-                </button>
-                <button className={`cartbtn ${selectedCategory === 'gin' ? 'active' : ''}`} onClick={() => handleCategoryClick('gin')}>
-                gin
-                </button>
-                <button className={`cartbtn ${selectedCategory === 'whisky' ? 'active' : ''}`} onClick={() => handleCategoryClick('whisky')}>
-                whisky
-                </button>
-                <button className={`cartbtn ${selectedCategory === 'champagne' ? 'active' : ''}`} onClick={() => handleCategoryClick('champagne')}>
-                champagne
-                </button>
-                <button className={`cartbtn ${selectedCategory === 'wine' ? 'active' : ''}`} onClick={() => handleCategoryClick('wine')}>
-                wine
-                </button>
-      
-           </div>
 
 
-           <div className='servecontainer'>
-        {filteredItems.map((item) => (
-          <div className='col-11 col-md-6 col-lg-3 mx-0 mb-4' key={item.id} id='servecard'>
-            <div className='col'>
-              <div className='card p-0 overflow-hidden shadow'>
-                <img src={item.image} className='card-img-top' alt='...' style={{ height: '300px' }} />
-                <div className='card-body'>
-                  <h5 className='card-title'>{item.title}</h5>
-                  <div key={item.id} className='addcart'>
-                    <p className='card-text'>Ksh.{item.price}</p>
-                    {/* <button
-                onClick={() => {
-                  if (!isItemAdded(item.id)) {
-                    addItem(item);
-                    addItemToAddedItems(item.id);
-                  }
-                }}
-                className={`cssbuttons-io-button ${isItemAdded(item.id) ? 'ordered' : ''}`}
-                disabled={isItemAdded(item.id)}
-              >
-                   
-                <span>{isItemAdded(item.id) ? 'Ordered' : 'Add'}</span>
-              </button> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-
+       
 
 
 

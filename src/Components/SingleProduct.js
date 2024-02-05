@@ -35,42 +35,6 @@ function SingleProduct({ data }) {
 
     <div>
 
-<div className='homepage'>
-            <div className='homepage-wrapper'>
-                <div className='callme'>
-                  <div>
-                    <i class="fa-solid fa-phone-volume fa-shake"></i>
-                 </div>
-                <div className='contactus'>
-                    <h5>Call us: 0768696986</h5>
-                    <p>liquor@gmail.com</p>
-                </div>
-                </div>
-                <div className='logoheader'>
-                    <h2>Luxury Liquors</h2>
-                    <p>Best liquor only</p>
-                </div>
-                <div className='navigations'>
-                    <ul>
-                        <li>
-                            <Link>Home</Link>
-                        </li>
-                        <li>
-                            <Link>About</Link>
-                        </li>
-                        <li>
-                            <Link>Shop</Link>
-                        </li>
-                        <li>
-                            <Link><i class="fa-solid fa-cart-shopping"></i></Link>
-                        </li>
-                    </ul>
-                 </div>
-
-            </div>
-
-            
-        </div>
 
     
     <div className='singlecontainer' >
@@ -78,7 +42,7 @@ function SingleProduct({ data }) {
       <img src={product.image} alt={product.title}  />
       <div className='singlestory'>
       <h2>{product.title}</h2>
-      <p>{product.category}</p>
+      <p>Category: {product.category}</p>
       <p>Price:Ksh {product.price}.00</p>
       <p>{product.description}</p>
       {product.stock.available ? (
@@ -111,6 +75,37 @@ function SingleProduct({ data }) {
 
  </div>
 
+{/* 
+<div class="row row-cols-1 row-cols-sm-2  row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="..."/>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="..."/>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="..."/>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+</div> */}
+
 
 {/*Related product section */}
 <div className='relatedcontainers'>
@@ -123,15 +118,14 @@ function SingleProduct({ data }) {
               <img src={relatedProduct.image} alt={relatedProduct.title} />
             </Link>
             <div className='relatedbody'>
-            <p>{relatedProduct.title}</p>
-            <p>Price: Ksh {relatedProduct.price}.00</p>
+            <p id='relattitle'>{relatedProduct.title}</p>
+            <p id='relattitle2'>Price: Ksh {relatedProduct.price}.00</p>
             </div>
        </div>
       ))
     }
   </div>
 </div>
-
 
 
 

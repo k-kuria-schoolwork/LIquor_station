@@ -1,8 +1,42 @@
 import React from 'react';
 import { useCart } from 'react-use-cart';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+
+function AgeConfirmationModal({ isOpen, onClose, onConfirm }) {
+  if (!isOpen) return null;
+
+  return (
+    <div className="modal-overlay">
+      <div className="modal">
+        <p>Are you 18 years old or above?</p>
+        <button onClick={onConfirm}>Yes</button>
+        <button onClick={onClose}>No</button>
+      </div>
+    </div>
+  );
+}
 
 function Cart() {
+  const navigate = useNavigate()
+  const [isModalOpen, setModalOpen] = useState(false)
+
+  const handleCheckoutClick = () => {
+    // Display the age confirmation modal
+    setModalOpen(true);
+  };
+
+  const handleConfirm = () => {
+    // Close the modal and navigate to the checkout page
+    setModalOpen(false);
+    navigate('/checkout');
+  };
+
+  const handleClose = () => {
+    // Close the modal without navigating
+    setModalOpen(false);
+  };
+
   const {
     isEmpty,
     totalUniqueItems,
@@ -11,12 +45,14 @@ function Cart() {
     removeItem,
   } = useCart();
 
+  
+
 
   if (isEmpty) return <p >
   <h3 className='emptycart'>
   Your cart is empty
    </h3> 
-   <Link to='/services'>
+   <Link to='/products/all'>
    <button className='cartbtn4'>go back</button>
    </Link>
    </p>;
@@ -39,8 +75,8 @@ function Cart() {
           <i class="fa-solid fa-arrow-left fa-fade"></i>
           </Link>
           <div className='sexybackgroundyy'>
-          <h2 className='liqstation3'> Products</h2>
-          <h2 className='liqstation4'> Products</h2>
+          <h2 className='liqstation3'> Shopping Cart</h2>
+          <h2 className='liqstation4'> Shopping Cart</h2>
           </div>
         </div>
        
@@ -50,14 +86,14 @@ function Cart() {
 <div>
 
 
-        <div className='findme'>
+        {/* <div className='findme'>
             <h2>Delivery Information</h2>
 
       <div className='findmewrapper'>
       <input placeholder='your location' name='text' type='text'></input>
       <i class="fa-solid fa-truck"></i>
       </div>
-    </div>
+    </div> */}
 
 
 
@@ -79,7 +115,7 @@ function Cart() {
 
 
         <div className='cartbody2'>
-        <p className='pheader'> {item.title}</p>
+        <p className='pppheader'> {item.title}</p>
           <div>
           <td>{parseFloat(item.quantity * item.price).toFixed(2)}</td>
           </div>
@@ -107,18 +143,45 @@ function Cart() {
         </div>
 ))}
 <span class="titlle">Total Price:<span className='price2'>Ksh {totalPrice.toFixed(2)}</span> </span>
+
+<div>
+
+<p className='proceed'>Proceed to</p>
+    <div className='checkout'>
+      <div className='checkout1'>
+      <Link to='/products/all'>
+        <button>Shop more</button>
+        </Link>
+      </div>
+      <div className='checkout2'>
+      <Link to='/checkout'>
+        <button onClick={handleCheckoutClick}>checkout</button>
+        </Link>
+
+        <AgeConfirmationModal
+        isOpen={isModalOpen}
+        onConfirm={handleConfirm}
+        onClose={handleClose}
+      />
+      </div>
+      
+      </div>
+      </div>
+
 </div>
 </div>
 
+
+{/* 
     <div className='ordersummary'>
       <h3>Order Summary</h3>
       <div className='orderwrapper'>
           <div className='paymentmethod'>
-          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
           <label for="vehicle1"> Cash on delivery</label>
           </div>
-          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
-          <label for="vehicle1"> Online Payment</label>
+          <input className='online2' type="checkbox" id="vehicle1" name="vehicle1" value="Bike" disabled/>
+          <label className='online' for="vehicle1"> Online Payment</label>
       </div>
 
       <div className='subtotal'>
@@ -147,11 +210,7 @@ function Cart() {
 
 
          
-        </table>
-          {/* <p>subtotal:<span className='price2'>Ksh  {totalPrice.toFixed(2)}</span> </p>
-          <p>Deliver fee:<span>Ksh 250 </span></p>
-          <p>Taxes: <span>Ksh 250 </span> </p>
-          <p>Total: </p> */}
+      
 
       </div>
       <div className='checkout'>
@@ -159,7 +218,10 @@ function Cart() {
         <button>continue to checkout</button>
         </Link>
       </div>
-    </div>
+    </div> */}
+
+
+    
     </div>
 </div>
     </>

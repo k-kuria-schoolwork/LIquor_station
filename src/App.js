@@ -8,11 +8,13 @@ import SingleProduct from './Components/SingleProduct';
 import { CartProvider } from 'react-use-cart';
 import Cart from './Components/Cart';
 import Checkout from './Components/Checkout';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
     <div className="App">
       <CartProvider>
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} ></Route>
         <Route path='/cart' element={<Cart />} ></Route>

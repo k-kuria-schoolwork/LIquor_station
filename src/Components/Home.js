@@ -1,59 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useCart } from 'react-use-cart'
 function Home() {
-    const { totalItems } = useCart()
 
   return (
     <div>
 
       <div>
-        <div className='homepage'>
-            <div className='homepage-wrapper'>
-                <div className='callme'>
-                  <div>
-                    <i class="fa-solid fa-phone-volume fa-shake"></i>
-                 </div>
-                <div className='contactus'>
-                    <h5>Call us: 0768696986</h5>
-                    <p>liquor@gmail.com</p>
-                </div>
-                </div>
-                <div className='logoheader'>
-                    <h2>Luxury Liquors</h2>
-                    <p>Best liquor only</p>
-                </div>
-                <div className='navigations'>
-                    <ul>
-                        <li>
-                            <Link>Home</Link>
-                        </li>
-                        <li>
-                            <Link>About</Link>
-                        </li>
-                        <li>
-                            <Link>Shop</Link>
-                        </li>
-                        <li>
-                        <div className='mycart'>
-                            <Link to='/cart'> 
-                            <i class="fa-solid fa-cart-shopping">
-                            <h6>{totalItems}</h6> 
-                                </i>
-                            </Link> 
-                        </div>        
-                        <p className='vcart'>view cart</p>
-      
-                      </li>
-                    </ul>
-                 </div>
-
-            </div>
-
-            <div className='homeimgone'>
+      <div className='homeimgone'>
                     <img src='../Images/liquorbackground.png' alt='mamabo safi'></img>
             </div>
-        </div>
+      
 
         <div className='allcategoriescontainer'>
             <div className='categname'>

@@ -1,13 +1,27 @@
 import React from 'react';
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { useCart } from 'react-use-cart';
 
 function Products({ data }) {
-  const { totalItems } = useCart()
   const { category } = useParams();
   console.log('category:', category);
   const [filter, setFilter] = useState('')
+  const [selectedCategoryCard, setSelectedCategoryCard] = useState('all')
+
+  const handleCategoryClick = (category) => {
+    setSelectedCategoryCard(category)
+    setFilter('')//Clear the filter when a new category is selected
+}
+
+const categoryButtons = [
+    { label: 'All', value: 'all' },
+    { label: 'Vodka', value: 'vodka' },
+    { label: 'Rum', value: 'rum' },
+    { label: 'Gin', value: 'gin' },
+    { label: 'Whisky', value: 'whisky' },
+    { label: 'Champagne', value: 'champagne' },
+    { label: 'Wine', value: 'wine' },
+  ];
 
 
   const searchText = (e)=> {
@@ -24,19 +38,23 @@ function Products({ data }) {
 
   return (
     <div>
+       <div className='sexybackgroundyy'>
+          <h2 className='liqstation3'>Liquor Station</h2>
+          <h2 className='liqstation4'>{category} Products</h2>
+          </div>
+
+        
+
+       
 
       <div className='productspageheader'>
         <div className='backcategory'>
           <Link to='/categories'>
-          <i class="fa-solid fa-arrow-left fa-fade"></i>
+          <i id='jambo' class="fa-solid fa-arrow-left fa-fade"></i>
           </Link>
-          <div className='sexybackgroundyy'>
-          <h2 className='liqstation3'>{category} Products</h2>
-          <h2 className='liqstation4'>{category} Products</h2>
-          </div>
+         
         </div>
-
-    <div className='searchcart'>
+        <div className='searchcart'>
         <div class="searchyy">
             <input type="text"
              class="search__input"
@@ -51,21 +69,26 @@ function Products({ data }) {
                     </g>
                 </svg>
             </button>
-
-            <div className='mycart'>
-            <Link to='/cart'> 
-              <i class="fa-solid fa-cart-shopping">
-                <h6>{totalItems}</h6> 
-                </i>
-              </Link> 
-              <p>view cart</p>
-            </div>
-
         </div>
         </div>
-      
-
       </div>
+
+
+      <div className='productcategory'>
+          {categoryButtons.map((category) => (
+        <button
+          key={category.value}
+          className={`cartbtn ${selectedCategoryCard === category.value ? 'active' : ''}`}
+          onClick={() => handleCategoryClick(category.value)}
+        >
+          <Link to={`/products/${category.value}`}>{category.label}</Link>
+        </button>
+      ))}
+
+          </div>
+
+
+
 
 
 
