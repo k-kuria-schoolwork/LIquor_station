@@ -56,7 +56,7 @@ const sendOrderConfirmationEmail = () => {
       navigate('/products/all')
       emptyCart(); // CLEAR CART AFTER EMAIL HAS BEEN SENT
     })
-   }, 5000)
+   }, 3000)
 
     const templateParams = {
         to_email: 'samuel.kuria01@student.moringaschool.com', // Replace with the recipient's email address
