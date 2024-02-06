@@ -285,7 +285,7 @@ color: white;
 .wishyou{
   position: absolute;
   top: 50%; /* Position the text in the middle vertically */
-  left: 25%; /* Position the text in the middle horizontally */
+  left: 30%; /* Position the text in the middle horizontally */
   transform: translate(-50%, -50%); /* Center the text precisely */
   text-align: center;
   color: white;
@@ -579,8 +579,9 @@ justify-content: center;
 .addcart button{
   padding: 10px;
   background-color: inherit;
-  border: 1px solid burlywood;
+  border: 2px solid rgb(0, 0, 0);
   transition: 0.5sec;
+  font-family: "Great Vibes", cursive;
 }
 .addcart span{
   font-size: 13px;
@@ -589,6 +590,7 @@ justify-content: center;
 .addcart .ordered{
 color: black;
 background-color: greenyellow;
+font-family: "Great Vibes", cursive;
 }
 .mycart{
   display: flex;
@@ -614,7 +616,7 @@ background-color: greenyellow;
   font-size: 25px;
 }
 .addcart button:hover{
-  background-color: burlywood;
+  background-color: rgb(68, 255, 0);
   border: 1px solid rgb(0, 0, 0);
 }
 .cartenimage{
@@ -775,7 +777,7 @@ padding: 10px 20px 30px;
   margin: 25px;
 }
 .confirmcancel{
-  margin-bottom: 30%;
+  margin-bottom: 13%;
   margin-top: 10%;
 display: flex; 
 /* margin: 50px; */
@@ -932,10 +934,10 @@ padding: 10px 50px 10px 30px;
   position: fixed;
   bottom: 0;
   width: 90%;
-  height: 65px;
+  height: 50px;
   box-shadow: 0 0 5px gray;
   border-radius: 50px;
-  background-color: rgba(255, 221, 157, 0.872);
+  background-color: rgba(0, 0, 0, 0.999);
   overflow-x: auto;
   display: flex;
   margin: 20px;
@@ -957,6 +959,16 @@ transition: background-color 0.1s ease-in-out;
 }
 .navlinks p{
   font-size: 13px;
+  color: white;
+
+}
+.navlinks i{
+color: white;
+}
+.navlinkcart h6{
+  font-size: 12px;
+  color: white;
+
 }
 
 
@@ -983,6 +995,7 @@ transition: background-color 0.1s ease-in-out;
 
 
 @media screen and (max-width: 700px) {
+
   .wishyou h2{
     font-size: 18px;
   }
@@ -1476,7 +1489,7 @@ td{
   gap: 5rem;
 }
 .newarrival h2{
-font-size: 15px;
+font-size: 18px;
 }
 .newarrival p{
   font-size: 10px;

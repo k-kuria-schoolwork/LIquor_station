@@ -3,12 +3,13 @@ import { useCart } from 'react-use-cart';
 import { Link,useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
-
+import Swal from 'sweetalert2';
 
 function Checkout() {
     const navigate = useNavigate()
     const { emptyCart} = useCart()
     const [loading, setLoading] = useState(false)
+
 
     const {
         totalUniqueItems,
@@ -46,8 +47,17 @@ const sendOrderConfirmationEmail = () => {
   setTimeout(() => {
     setLoading(false)
 
-    alert('Delivery confirmed')
-  }, 28000)
+    Swal.fire({ // Use Swal.fire instead of alert
+      title: 'Success!',
+      text: 'Delivery confirmed',
+      icon: 'success',
+      confirmButtonText: 'OK'
+    }).then(()=> {
+      navigate('/products/all')
+      emptyCart(); // CLEAR CART AFTER EMAIL HAS BEEN SENT
+    })
+   }, 5000)
+
     const templateParams = {
         to_email: 'samuel.kuria01@student.moringaschool.com', // Replace with the recipient's email address
         subject: 'Order Confirmation',
@@ -103,7 +113,21 @@ const handleCancelOrder = () => {
       street: '',
       paymentMethod: 'Cash on Delivery',
     });
-    navigate('/');
+    setLoading(true)
+
+  setTimeout(() => {
+    setLoading(false)
+
+    Swal.fire({ // Use Swal.fire instead of alert
+      // title: 'Success!',
+      text: 'Delivery Cancelled',
+      icon: 'warning',
+      confirmButtonText: 'EXIT'
+    }).then(()=> {
+      navigate('/products/all')
+      emptyCart(); // CLEAR CART AFTER EMAIL HAS BEEN SENT
+    })
+   }, 5000)
 
   };
 

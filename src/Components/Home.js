@@ -120,14 +120,14 @@ function Home() {
 
         <div>
             <div className='homeimgtwo'>
-                <img src='../Images/jackdanielbackground.jpg' alt='weekend'></img>
+                <img src='https://www.nestorliquor.com/cdn/shop/articles/Image1_108d3286-5786-403b-aa8f-fbdf6d8bb127.png?v=1677889947' alt='weekend'></img>
                 <div className='wishyou'>
-                    <h2>Get all your favorite drinks at the </h2>
+                    {/* <h2>Get all your favorite drinks at the </h2>
                     <h2>tap of a button</h2>
                     <button className='aluta'>
                         <Link to='/categories'>View Category</Link>
                     </button>
-                    <p>Masaa ni ya <span>aluta</span></p>
+                    <p>Masaa ni ya <span>aluta</span></p> */}
                 </div>
             </div>
         </div>
