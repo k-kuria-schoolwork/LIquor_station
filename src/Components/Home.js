@@ -6,9 +6,20 @@ function Home() {
     <div>
 
       <div>
-      <div className='homeimgone'>
-                    <img src='../Images/liquorbackground.png' alt='mamabo safi'></img>
+      <div>
+            <div className='homeimgtwo'>
+                <img src='../Images/jackdanielbackground.jpg' alt='weekend'></img>
+                <div className='wishyou'>
+                    <h2>Get all your favorite drinks at the </h2>
+                    <h2>tap of a button</h2>
+                    <button className='aluta'>
+                        <Link to='/products/all'>View Category</Link>
+                    </button>
+                    <p>Masaa ni ya <span>aluta</span></p>
+                </div>
             </div>
+        </div>
+
       
 
         <div className='allcategoriescontainer'>

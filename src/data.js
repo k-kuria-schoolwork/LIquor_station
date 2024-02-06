@@ -320,11 +320,6 @@ const data = {
 
 
 
-
-
-
-
-
         {
             id:27,
             title:'Guiness Foreign Extra 300ml',

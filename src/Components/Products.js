@@ -21,6 +21,8 @@ const categoryButtons = [
     { label: 'Whisky', value: 'whisky' },
     { label: 'Champagne', value: 'champagne' },
     { label: 'Wine', value: 'wine' },
+    { label: 'beer', value: 'beer' },
+
   ];
 
 
@@ -49,7 +51,7 @@ const categoryButtons = [
 
       <div className='productspageheader'>
         <div className='backcategory'>
-          <Link to='/categories'>
+          <Link to='/products/all'>
           <i id='jambo' class="fa-solid fa-arrow-left fa-fade"></i>
           </Link>
          

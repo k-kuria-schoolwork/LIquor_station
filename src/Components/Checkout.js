@@ -8,6 +8,7 @@ import emailjs from '@emailjs/browser';
 function Checkout() {
     const navigate = useNavigate()
     const { emptyCart} = useCart()
+    const [loading, setLoading] = useState(false)
 
     const {
         totalUniqueItems,
@@ -17,7 +18,7 @@ function Checkout() {
       const delivery = 200
 
       const totalPrice = items.reduce((total, item) =>total + item.price * item.quantity,0)
-const subtotal = items.reduce((total, item) => totalPrice + delivery)
+const subtotal = items.reduce((total, item) => total + item.price + delivery,0)
 
 //state to hold form data
 const [formData, setFormData] = useState({
@@ -40,6 +41,13 @@ const handleInputChange =(e) =>{
 
  // Handler to send receipt email
 const sendOrderConfirmationEmail = () => {
+  setLoading(true)
+
+  setTimeout(() => {
+    setLoading(false)
+
+    alert('Delivery confirmed')
+  }, 28000)
     const templateParams = {
         to_email: 'samuel.kuria01@student.moringaschool.com', // Replace with the recipient's email address
         subject: 'Order Confirmation',
@@ -56,7 +64,7 @@ const sendOrderConfirmationEmail = () => {
         })),
         deliveryFee: delivery.toFixed(2),
         totalPrice: totalPrice.toFixed(2),
-        subtotal: subtotal.toFixed(2),
+        // subtotal: subtotal.toFixed(2),
 
     };
 
@@ -302,9 +310,17 @@ const handleCancelOrder = () => {
 
 
                 <div className='confirmcancel'>
+                  <div>
+                    {loading && (
+                      <div className='overlay'></div>
+                    )}
+                   <span className={`loader ${loading ? 'show' : ''}`} />
                     <div className='confirmshit'>
                     <button className='confirm' onClick={sendOrderConfirmationEmail}>Confirm delivery</button>
                     </div>
+                    </div>
+
+
                     <div className='cancelshit'>
                     <button className='cancel' onClick={handleCancelOrder}>Cancel Order</button>
                     </div>
