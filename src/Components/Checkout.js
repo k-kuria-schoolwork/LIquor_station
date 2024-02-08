@@ -50,7 +50,7 @@ const sendOrderConfirmationEmail = () => {
     Swal.fire({ // Use Swal.fire instead of alert
       title: 'Success!',
       text: 'Delivery confirmed',
-      text: 'You will get a confirmation call shortly',
+      text1: 'You will get a confirmation call shortly',
       icon: 'success',
       confirmButtonText: 'OK'
     }).then(()=> {
