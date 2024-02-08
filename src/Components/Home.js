@@ -12,16 +12,23 @@ function Home() {
                 <div className='wishyou'>
                     <h2>Get all your favorite drinks at the </h2>
                     <h2>tap of a button</h2>
-                    <button className='aluta'>
-                        <Link to='/products/all'>Get Started</Link>
-                    </button>
-                    <p>Masaa ni ya <span>aluta</span></p>
+                    
+                      
+                       
+                   
                 </div>
             </div>
         </div>
 
-      
-
+      <div className='insticnt'>
+      <div className='budafoam'>
+            <p>Masaa ni ya <span>aluta</span></p>
+          </div>
+          <button className='alluta'>
+             <Link to='/products/all'>Proceed to shop</Link>
+         </button>
+         </div>
+       
         <div className='allcategoriescontainer'>
             <div className='categname'>
                 <h2>Our Categories</h2>
@@ -62,7 +69,7 @@ function Home() {
 
             <div className='viewcate'>
                 <button>
-                <Link to='/categories'>
+                <Link to='/products/all'>
                     View All 
                 </Link>
                 
@@ -187,7 +194,7 @@ function Home() {
       <div className='newarrivalcontainer'>
             <div className='newarrival'>
             <h2>Trending Products</h2>
-            <p>View more</p>
+            <p className='brrr'><Link to='products/all'>View more</Link></p>
             </div>
 
             <div className='displaycardcontainer2'>

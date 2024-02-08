@@ -33,6 +33,31 @@ body{
   padding-top: 4%;
   padding-bottom: 1%;
 }
+.cardbodyoo h5{
+  font-size: 16px;
+}
+.cardbodyoo p{
+  font-size: 14px;
+}
+.brrr a{
+  text-decoration: none;
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+.newarrival h2{
+  text-decoration: underline;
+  text-decoration-skip-ink: none; /* Prevents underlines from being drawn over glyphs */
+  text-underline-offset: 12px;
+}
+.brrr a:hover{
+  text-decoration: underline;
+  text-decoration-skip-ink: none; /* Prevents underlines from being drawn over glyphs */
+  text-underline-offset: 8px;
+}
+.cardbodyoo {
+padding-left: 10px;
+padding-top: 15px;
+}
 .callme{
   display: flex;
 gap: 0.5rem;
@@ -285,6 +310,29 @@ border: 1px solid rgb(255, 255, 255);
   color: white;
 }
 
+
+.alluta a{
+  text-decoration: none;
+  color: black;
+}
+.alluta{
+  justify-content: center;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  width: 180px;
+  transition: 0.5s ease-in-out;
+}
+.alluta:hover{
+  background-color: black;
+color: white;
+border: 1px solid rgb(255, 255, 255);
+
+}
+.alluta a:hover{
+  color: white;
+}
+
 .viewcate button{
   display: flex;
   align-items: baseline;
@@ -319,18 +367,26 @@ color: white;
 }
 .wishyou{
   position: absolute;
-  top: 50%; /* Position the text in the middle vertically */
-  left: 30%; /* Position the text in the middle horizontally */
+  top: 32%; /* Position the text in the middle vertically */
+  left: 48%; /* Position the text in the middle horizontally */
   transform: translate(-50%, -50%); /* Center the text precisely */
   text-align: center;
   color: white;
+  /* background-color: rgba(6, 6, 6, 0.689); 
+padding: 20px;
+border-radius: 18px; */
 }
 .wishyou h2{
-  font-size: 42px;
+  font-size: 47px;
+  font-weight: 600;
 }
 .wishyou span{
   font-family: "Rubik Burned", system-ui;
 font-size: 50px;
+}
+.budafoam span{
+  font-family: "Rubik Burned", system-ui;
+  font-size: 50px;
 }
 .wishyou p{
 font-size: 30px;
@@ -1065,6 +1121,22 @@ color: white;
   object-fit: cover;
   opacity: 0.9;
 }
+.budafoam{
+text-align: center;
+  /* width: 120%; */
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+.insticnt{
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+justify-content: center;
+gap: 8rem;
+}
+.insticnt button{
+  padding: 10px;
+}
 
 .text-overlay {
   position: absolute;
@@ -1123,6 +1195,13 @@ border-radius: 10px;
 
 
 @media screen and (max-width: 700px) {
+  .insticnt{
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+  justify-content: center;
+  gap: 0rem;
+  }
   .homecontentcontainer{
     display: block;
     gap: 5rem;
@@ -1152,12 +1231,15 @@ border-radius: 10px;
   }
 
   .wishyou h2{
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 600;
   }
   .wishyou{
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.702);
     position: absolute;
-    top: 30%; /* Position the text in the middle vertically */
-    left: 35%; /* Position the text in the middle horizontally */
+    top: 38%; /* Position the text in the middle vertically */
+    left: 44%; /* Position the text in the middle horizontally */
     transform: translate(-50%, -50%); /* Center the text precisely */
     text-align: center;
     color: white;
