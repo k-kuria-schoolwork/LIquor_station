@@ -66,6 +66,15 @@ function SingleProduct({ data }) {
                           >
                             <span>{isItemAdded(product.id) ? 'ORDERED' : 'ADD TO CART  ---->'}</span>
                           </button>
+
+                          {isItemAdded(product.id) && (
+                            <div className='nowviewcart'>
+                              <p>You can now view your cart</p>
+                              <Link to='/cart'>
+                              <button className=''viewyourcart>View Cart</button>
+                              </Link>
+                            </div>
+                          )}
                           
                     </div>
       
