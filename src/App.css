@@ -203,7 +203,20 @@ margin-top: 4%;
  box-shadow: 5px 10px 13px #bebebe5f,
                -10px -5px 30px #ffffff56;
 }
+.cardcontainer2{
+  width: 250px;
+  height: auto;
+  border-radius: 30px;
+ box-shadow: 5px 10px 13px #bebebe5f,
+               -10px -5px 30px #ffffff56;
+}
 .displaycardcontainer{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+.displaycardcontainer2{
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -212,6 +225,10 @@ margin-top: 4%;
 .cardcol img{
   width: 100%;
   height: 300px;
+}
+.cardcol2 img{
+  width: 100%;
+  height: 280px;
 }
 .newarrivalcontainer{
   margin-top: 7%;
@@ -970,6 +987,99 @@ color: white;
   color: white;
 
 }
+.homecontentcontainer{
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  margin-top: 5%;
+}
+.homecontentcontainer a{
+  color: inherit;
+}
+.homecontentcontainer button{
+  padding: 10px;
+  border: none;
+}
+.contenthome{
+  line-height: 40px;
+  width: 33%;
+}
+.shopwithuscontainer{
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  margin-top: 10%;
+}
+.homecontentimg2 img{
+  width: 120%;
+  height: 380px;
+  transition: transform 0.3s ease;
+}
+.homecontentimg img{
+  object-fit: cover;
+  width: 112%;
+  height: 380px;
+  transition: transform 0.3s ease;
+}
+.homecontentimg2:hover img {
+  transform: scale(1.1); /* Increase the scale on hover to achieve the magnifying effect */
+}
+.homecontentimg:hover img {
+  transform: scale(1.1); /* Increase the scale on hover to achieve the magnifying effect */
+}
+.shopwithuscontainer {
+  position: relative;
+}
+
+.homecontentimg2 {
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+.homecontentimg {
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+.homeimgtwo img{
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  /* opacity: 0.9; */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(255, 255, 255, 0.689);  */
+  padding: 20px; /* Adjust as needed */
+  border-radius: 10px; /* Add some border-radius for styling */
+  text-align: center;
+  max-width: 80%; /* Adjust as needed */
+}
+
+.text-overlay h2 {
+  font-size: 44px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 600;
+}
+#shoppify{
+  font-size: 44px;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.text-overlay p {
+  font-size: 16px;
+  color: white;
+  background-color: rgba(6, 6, 6, 0.689); 
+padding: 20px;
+border-radius: 10px;
+}
 
 
 
@@ -995,6 +1105,33 @@ color: white;
 
 
 @media screen and (max-width: 700px) {
+  .homecontentcontainer{
+    display: block;
+    gap: 5rem;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  .text-overlay h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 600;
+  }
+  #shoppify{
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 10%;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+  }
+  
+  .text-overlay p {
+    font-size: 12px;
+    color: white;
+    background-color: rgba(6, 6, 6, 0.689); 
+  padding: 14px;
+  border-radius: 10px;
+  }
 
   .wishyou h2{
     font-size: 18px;
@@ -1329,6 +1466,33 @@ border: 1px solid rgb(255, 255, 255);
 
 
 @media screen and (max-width: 400px) {
+  .cardcontainer2{
+    width: 150px;
+    height: auto;
+    border-radius: 30px;
+   box-shadow: 5px 10px 13px #bebebe5f,
+                 -10px -5px 30px #ffffff56;
+  }
+ 
+  .displaycardcontainer2{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+.cardbodyoo h5,p{
+  font-size: 12px;
+}
+.cardbodyoo {
+padding: 10px;
+}
+
+  .cardcol2 img{
+    width: 100%;
+    height: 180px;
+  }
+
+
   .viewcate button{
     margin-left: -50%;
   }

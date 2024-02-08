@@ -13,7 +13,7 @@ function Home() {
                     <h2>Get all your favorite drinks at the </h2>
                     <h2>tap of a button</h2>
                     <button className='aluta'>
-                        <Link to='/products/all'>View Category</Link>
+                        <Link to='/products/all'>Get Started</Link>
                     </button>
                     <p>Masaa ni ya <span>aluta</span></p>
                 </div>
@@ -79,61 +79,10 @@ function Home() {
 
 
 
-      <div className='newarrivalcontainer'>
-            <div className='newarrival'>
-            <h2>New Arrivals</h2>
-            <p>View more</p>
-            </div>
-
-            <div className='displaycardcontainer'>
-                <div className='cardcontainer'>
-                    <div className='cardcol'>
-                        <img src='https://wikiliq.org/wp-content/uploads/2021/01/ci-jameson-gift-tin-8d38b220d535dd82.jpeg' alt='carrd1'></img>
-                        <div className='cardbody'>
-                            <h5>Card Title</h5>
-                            <p>Price</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='cardcontainer'>
-                    <div className='cardcol'>
-                        <img src='https://i.pinimg.com/736x/1d/94/db/1d94dbe87a68f1f43503dbfd97b5a53f.jpg' alt='carrd1'></img>
-                        <div className='cardbody'>
-                            <h5>Card Title</h5>
-                            <p>Price</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='cardcontainer'>
-                    <div className='cardcol'>
-                        <img src='https://shop.bombaysapphire.com/cdn/shop/products/Engraved-Bombay-HappyBirthdaySam_2048x2048.jpg?v=1638187382' alt='carrd1'></img>
-                        <div className='cardbody'>
-                            <h5>Card Title</h5>
-                            <p>Price</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div className='homeimgtwo'>
-                <img src='https://www.nestorliquor.com/cdn/shop/articles/Image1_108d3286-5786-403b-aa8f-fbdf6d8bb127.png?v=1677889947' alt='weekend'></img>
-                <div className='wishyou'>
-                    {/* <h2>Get all your favorite drinks at the </h2>
-                    <h2>tap of a button</h2>
-                    <button className='aluta'>
-                        <Link to='/categories'>View Category</Link>
-                    </button>
-                    <p>Masaa ni ya <span>aluta</span></p> */}
-                </div>
-            </div>
-        </div>
+     
 
 
-        <div className='newarrivalcontainer'>
+        {/* <div className='newarrivalcontainer'>
             <div className='newarrival'>
             <h2>Best Selling </h2>
             <p>View more</p>
@@ -173,9 +122,9 @@ function Home() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
 
        <h2 className='productprice'>List of our product prices </h2>
 
@@ -206,7 +155,83 @@ function Home() {
     </tr>
   </tbody>
 </table>
-</div>
+</div> */}
+
+        <div className='homecontentcontainer'>
+            <div className='homecontentimg'>
+            <Link to='/about'>
+            <img src='https://i0.wp.com/picjumbo.com/wp-content/uploads/nye-party-celebrations-pouring-champagne-free-photo.jpg?w=600&quality=80' alt='homeimg'></img>
+                <div className="text-overlay">
+                <h2>About Us</h2>
+                <p>Where every bottle holds the promise of an unforgettable night, and every pour fuels the rhythm of celebration</p>
+                <button>Read more</button>
+                </div>
+            </Link>
+            </div>
+
+            <div className='homecontentimg2'>
+                <Link to={'/products/all'}>
+                    <img src='https://www.just-drinks.com/wp-content/uploads/sites/29/2023/08/Captain-Morgan-Spiced-Gold-0.0-e1700739900247.png' alt='homeimg'></img>
+                    <div className="text-overlay">
+                    <h2 id='shoppify'>Shop Online</h2>
+                    <p>At Luxury Liquors we understand the importance of convenience and reliability when it comes to delivering your favorite beverages...</p>
+                    <button>Start Shopping</button>
+                    </div>
+                </Link>
+               
+            </div>
+           
+        </div>
+
+       
+      <div className='newarrivalcontainer'>
+            <div className='newarrival'>
+            <h2>New Arrivals</h2>
+            <p>View more</p>
+            </div>
+
+            <div className='displaycardcontainer2'>
+                <div className='cardcontainer'>
+                    <div className='cardcol2'>
+                        <img src='https://wikiliq.org/wp-content/uploads/2021/01/ci-jameson-gift-tin-8d38b220d535dd82.jpeg' alt='carrd1'></img>
+                        <div className='cardbodyoo'>
+                            <h5>Card Title</h5>
+                            <p>Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='cardcontainer'>
+                    <div className='cardcol2'>
+                        <img src='https://wikiliq.org/wp-content/uploads/2021/01/ci-jameson-gift-tin-8d38b220d535dd82.jpeg' alt='carrd1'></img>
+                        <div className='cardbodyoo'>
+                            <h5>Card Title</h5>
+                            <p>Price</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='cardcontainer2'>
+                    <div className='cardcol2'>
+                        <img src='https://www.mountviewwines.com.au/images/wines/wine-slider-bgr.png' alt='carrd1'></img>
+                        <div className='cardbodyoo'>
+                            <h5>MountainView Wines</h5>
+                            <p>Ksh 1300.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='cardcontainer2'>
+                    <div className='cardcol2'>
+                        <img src='https://shop.bombaysapphire.com/cdn/shop/products/Engraved-Bombay-HappyBirthdaySam_2048x2048.jpg?v=1638187382' alt='carrd1'></img>
+                        <div className='cardbodyoo'>
+                            <h5>Bombay Saphire </h5>
+                            <p>Ksh 2,800.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
   )
 }

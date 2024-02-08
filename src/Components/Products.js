@@ -51,7 +51,7 @@ const categoryButtons = [
 
       <div className='productspageheader'>
         <div className='backcategory'>
-          <Link to='/products/all'>
+          <Link to='/'>
           <i id='jambo' class="fa-solid fa-arrow-left fa-fade"></i>
           </Link>
          
