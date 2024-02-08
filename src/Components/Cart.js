@@ -71,7 +71,7 @@ function Cart() {
 
    
         <div className='backcategory3'>
-          <Link to='/categories'>
+          <Link to='/products/all'>
           <i class="fa-solid fa-arrow-left fa-fade"></i>
           </Link>
           <div className='sexybackgroundyy'>
