@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 function Home() {
 
   return (
-    <div>
+    <div className='zenbudha'>
 
       <div>
       <div>
             <div className='homeimgtwo'>
-                <img src='../Images/jackdanielbackground.jpg' alt='weekend'></img>
+                <img src='https://www.bourbonbanter.com/content/images/2023/09/12-year-front-and-10-corked_hr-1.jpg' alt='weekend'></img>
                 <div className='wishyou'>
                     <h2>Get all your favorite drinks at the </h2>
                     <h2>tap of a button</h2>
@@ -30,28 +30,28 @@ function Home() {
             <div className='displaymycateg'>
 
                 <div className='displayvector'>
-                    <Link>
+                    <Link to='/products/whisky'>
                     <img src='../Images/whiskyvector.png' alt='whisky'></img>
                    <p>Whisky</p> 
                     </Link> 
                 </div>
                
                 <div className='displayvector'>
-                    <Link>
+                    <Link to='/products/gin'>
                     <img src='../Images/gin.png' alt='whisky'></img>
                     <p>Gin</p> 
                     </Link> 
                 </div>
 
                 <div className='displayvector'>
-                    <Link>
+                    <Link to='/products/vodka'>
                     <img src='https://previews.123rf.com/images/chekat/chekat1603/chekat160300117/53773330-bottle-and-a-glass-of-cognac-vector-illustration-on-white-background.jpg' alt='whisky'></img>
-                    <p>Brandy</p> 
+                    <p>Vodka</p> 
                     </Link> 
                 </div>
 
                  <div className='displayvector'>
-                    <Link>
+                    <Link to='/products/wine'>
                     <img src='../Images/winepress.png' alt='whisky'></img>
                     <p>Wine</p> 
                     </Link> 
@@ -186,26 +186,26 @@ function Home() {
        
       <div className='newarrivalcontainer'>
             <div className='newarrival'>
-            <h2>New Arrivals</h2>
+            <h2>Trending Products</h2>
             <p>View more</p>
             </div>
 
             <div className='displaycardcontainer2'>
                 <div className='cardcontainer'>
                     <div className='cardcol2'>
-                        <img src='https://wikiliq.org/wp-content/uploads/2021/01/ci-jameson-gift-tin-8d38b220d535dd82.jpeg' alt='carrd1'></img>
+                        <img src='https://molloys.ie/cdn/shop/files/IMG-4442_768x.jpg?v=1693818225' alt='carrd1'></img>
                         <div className='cardbodyoo'>
-                            <h5>Card Title</h5>
-                            <p>Price</p>
+                            <h5>Jameson 18yrs Old </h5>
+                            <p>Ksh 2,300.00</p>
                         </div>
                     </div>
                 </div>
                 <div className='cardcontainer'>
                     <div className='cardcol2'>
-                        <img src='https://wikiliq.org/wp-content/uploads/2021/01/ci-jameson-gift-tin-8d38b220d535dd82.jpeg' alt='carrd1'></img>
+                        <img src='https://i0.wp.com/www.liquorshack.co.ke/wp-content/uploads/2020/12/Guiness-wpp1692313642468.png?fit=500%2C500&ssl=1' alt='carrd1'></img>
                         <div className='cardbodyoo'>
-                            <h5>Card Title</h5>
-                            <p>Price</p>
+                            <h5>Guiness Foreign extra</h5>
+                            <p>Ksh 180.00</p>
                         </div>
                     </div>
                 </div>

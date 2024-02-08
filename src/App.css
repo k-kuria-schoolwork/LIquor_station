@@ -3,11 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hedvig+Letters+Serif:opsz@12..24&family=Lemon&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:opsz,wght@6..12,200&family=Playfair+Display:wght@400..900&family=Rubik+Burned&display=swap');
 
 *{
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Hedvig Letters Serif", serif;
 letter-spacing: .13em;
+}
+body{
+  position: relative;
+  z-index: 0;
+  /* background-image: url('../public/Images/trendy.png'); */
+ /* background-image: url(https://img.freepik.com/premium-vector/trendy-seamless-pattern-alcohol-bottles-glasses-alcohol-drinks-isolated-black-background_951000-95.jpg); */
+  opacity: 7;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hedvig Letters Serif", serif;
+  letter-spacing: .13em;
 }
 .homepage{
   background-color: rgba(0, 0, 0, 0.912);
@@ -222,13 +235,18 @@ margin-top: 4%;
   gap: 5rem;
   flex-wrap: wrap;
 }
+.zenbudha{
+  position: relative; /* Ensure z-index works */
+  z-index: 0; /* Lower z-index */
+ 
+}
 .cardcol img{
   width: 100%;
   height: 300px;
 }
 .cardcol2 img{
   width: 100%;
-  height: 280px;
+  height: 300px;
 }
 .newarrivalcontainer{
   margin-top: 7%;
@@ -1045,7 +1063,7 @@ color: white;
   width: 100%;
   height: 60vh;
   object-fit: cover;
-  /* opacity: 0.9; */
+  opacity: 0.9;
 }
 
 .text-overlay {
