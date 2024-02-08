@@ -33,8 +33,16 @@ function SingleProduct({ data }) {
 
   return (
 
-    <div>
-
+    <div >
+      <div className='mjamaa'>
+          <div className='backcategory'>
+                <Link to='/products/all'>
+                <i id='jambo' class="fa-solid fa-arrow-left fa-fade"></i>
+                </Link>
+              </div>
+              <p>go back</p>
+      </div>
+      
 
     
     <div className='singlecontainer' >

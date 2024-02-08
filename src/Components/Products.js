@@ -54,7 +54,6 @@ const categoryButtons = [
           <Link to='/'>
           <i id='jambo' class="fa-solid fa-arrow-left fa-fade"></i>
           </Link>
-         
         </div>
         <div className='searchcart'>
         <div class="searchyy">

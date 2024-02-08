@@ -682,6 +682,17 @@ justify-content: center;
 .relatedprod-wrapper {
   height: 300px;
 }
+.mjamaa i{
+  color: black;
+ font-size: 35px;
+}
+.mjamaa{
+  margin-top: 3%;
+  margin-left: 20%;
+  display: flex;
+  /* align-items: center; */
+  gap: 1rem;
+}
 
 .relatedcontainers h3{
   text-align: center;
@@ -690,7 +701,7 @@ justify-content: center;
 .addcart button{
   padding: 10px;
   background-color: inherit;
-  border: 2px solid rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
   transition: 0.5sec;
   font-family: "Great Vibes", cursive;
 }
@@ -1215,6 +1226,34 @@ border-radius: 10px;
 
 
 @media screen and (max-width: 700px) {
+  .addcart button{
+    padding:5px;
+    background-color: inherit;
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.5sec;
+    font-family: "Great Vibes", cursive;
+  }
+  .nowviewcart{
+    margin-top: 3%;
+    background-color: rgba(128, 128, 128, 0.103);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .nowviewcart a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+  .mjamaa{
+    margin-top: 3%;
+    margin-left: 5%;
+    display: flex;
+    /* align-items: center; */
+    gap: 1rem;
+  }
+  
   .insticnt{
     padding: 10px;
     background-color: rgb(0, 0, 0);
